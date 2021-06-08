@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Retráctiles</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+   
+  <a-entity id="rig" movement-controls kinematic-body position="2.192 0 2">
+  <a-entity id="camera" camera position="0 2 0" look-controls cursor="rayOrigin: mouse"></a-entity>
+  </a-entity>
+  
+  <a-entity environment="active:true;seed:26;skyType:gradient;skyColor:#FFFEF4;horizonColor:#B6B4B4;lightPosition:0 1.65 -1;fog:0;groundYScale:5;walkernoise:gradientshader;groundColor:#616161;groundColor2:#A0A3A2;dressing:none;dressingColor:#7c5c45;dressingVariance:20 20 20;grid:spots;gridColor:#e4b676;preset:egypt" preset-switcher="" id="environment"><a-entity class="environment" position="0 50 0" light="color:#72C40B;groundColor:#72C40B;intensity:0.2;type:hemisphere"></a-entity> <a-entity class="environment" position="0 1.65 -1" light="shadowCameraLeft:-5;shadowCameraBottom:-5;shadowCameraRight:5;shadowCameraTop:5;intensity:0.2">
+  </a-entity>
+  
+  
+  <a-entity rotation="-90 0 0" class="environmentGround environment" scale="3.9299999999999997 2.37 4" shadow="cast:false;receive:false" position="0.88 -0.77 0"></a-entity><a-entity class="environmentDressing environment"></a-entity> <a-sky radius="200" theta-length="110" class="environment" geometry=" "material="npot:false;shader:gradientshader;topColor:#155142;bottomColor:#e4b676"></a-sky> <a-entity id="stars" visible="false"></a-entity>
+  </a-entity>
+
+  <a-camera position="19.11676 1.5485 -34.12687"> </a-camera>
+
+      <a-assets timeout = "10000">
+
+      <a-asset-item id="MISERABLE" src="./MISERABLE.gltf"></a-asset-item>
+      
+      <a-asset-item id="MEMENTO" src="./MEMENTO.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="FINAL" src="./FINAL.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru" src="./registru.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru202" src="./registru202.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru99" src="./registru99.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru4" src="./registru4.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru333" src="./registru333.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru" src="./registru.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="registru77" src="./registru7.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="MIRATU" src="./MIRATU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+      <a-asset-item id="SOSTENU" src="./SOSTENU.gltf"></a-asset-item>
+
+     </a-assets>
+
+
+
+    <a-gltf-model src="#MISERABLE" position="23.820  9.160 -35.090" scale=" 1  1  1" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-gltf-model>
+
+    <a-gltf-model src="#MEMENTO" position="23.820  9.160 -35.090" scale=" 1  1  1" rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="-31.41951 -2.98848 -89.56556" scale="0.26015 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-132.82856 -13.5411 78.03318" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-97.67546 -23.54249 -58.71689" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="37.57722 -2.87395 13.14617" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="92.14248 -9.06769 42.72613" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="-106.2233 -23.3776 44.94737" scale="-0.42442 0.87601 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+ 
+    <a-gltf-model src="#FINAL" position="123.47576 -2.87395 -18.67655" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="118.81033 -2.42951 -92.44124" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#FINAL" position="-17.51933 -2.87395 -43.11301" scale="0.58093 0.53265 -0.26792" static-body="shape= FINAL.gltf" gltf-model="./FINAL.gltf"></a-gltf-model>
+
+  
+  
+    <a-gltf-model src="#SOSTENU" position="49.75846 -1.24633 -75.37712" scale="0.58093 0.53265 -0.26792" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru" position="64.44276 -0.38031 -56.30666" scale="0.77399 0.53265 0.96435" static-body="shape= registru.gltf" gltf-model="./registru.gltf" rotation="0 -14.725588292657289 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="-65.69273 -4.61151 -73.75063" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru202" position="-57.3727 4.19187 -61.33721" scale="0.4558 0.36426 0.57576" static-body="shape= registru202.gltf" gltf-model="./registru202.gltf" rotation="0 -16.24679123872962 0"></a-gltf-model>
+   
+    <a-gltf-model src="#SOSTENU" position="7.51988 -2.87395 29.03248" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru99" position="15.46378 6.24071 41.39384" scale="0.4558 0.36426 0.57576" static-body="shape= registru99.gltf" gltf-model="./registru99.gltf" rotation="0 -16.24679123872962 0"></a-gltf-model>
+   
+    <a-gltf-model src="#SOSTENU" position="-48.56739 -2.87395 -26.33907" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru4" position="-41.24947 6.24071 -13.81345" scale="0.4558 0.36426 0.57576" static-body="shape= registru4.gltf" gltf-model="./registru4.gltf" rotation="0 -18.905888365931773 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="62.37871 -2.32023 62.24101" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru333" position="69.65754 6.24071 74.69743" scale="0.4558 0.36426 0.57576" static-body="shape= registru333.gltf" gltf-model="./registru333.gltf" rotation="0 -18.905888365931773 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="-55.56912 -2.87395 68.03094" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru" position="-48.2937 6.24071 80.55303" scale="0.4558 0.36426 0.57576" static-body="shape= registru.gltf" gltf-model="./registru.gltf" rotation="0 -18.905888365931773 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="91.65493 -2.87395 -1.05576" scale="0.58093 0.64675 0.18259" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#registru77" position="100.20939 5.90272 10.25278" scale="0.4558 0.36426 0.57576" static-body="shape= registru77.gltf" gltf-model="./registru77.gltf" rotation="0 -18.905888365931773 0"></a-gltf-model>
+    
+     
+    <a-gltf-model src="#MIRATU" position="-133.05115 -5.8216 -27.6932" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-40.91888 -0.85754 33.96355" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-40.91888 -26.13161 81.87424" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#MIRATU" position="-186.25711 -12.7065 1.60066" scale="5.05386 5.14793 5.2385" opacity="0.2" static-body="shape= MIRATU.gltf" gltf-model="./MIRATU.gltf"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="-5.20564 -36.07324 -70.34158" scale="0.58093 3.29202 0.89286" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="19.22338 -23.36275 -41.00738" scale="0.58093 1.30908 0.29066" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+   
+    <a-gltf-model src="#SOSTENU" position="14.08639 -36.07324 5.92908" scale="0.58093 3.29202 -0.28356" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="42.30762 -29.57379 86.86039" scale="2.96299 3.29202 -0.04748" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 32.34862415529115 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="-54.17111 -22.29942 79.55351" scale="1.92422 3.29202 0.88232" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+    <a-gltf-model src="#SOSTENU" position="-87.88464 -3.79524 -76.84769" scale="-0.25853 3.29202 0.31205" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+    
+    <a-gltf-model src="#SOSTENU" position="80.8637 -54.66556 -41.21537" scale="0.7016 3.38826 0.32117" static-body="shape= SOSTENU.gltf" gltf-model="./SOSTENU.gltf" rotation="0 70 0"></a-gltf-model>
+
+
+    <a-image src="RR3.jpg" scale="4.88981 9.32167 5.50947" opacity="0.5" position="22.12896 5.43491 57.55399" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000" ></a-image>
+    <a-image src="CITY3.png" scale="7.06412 8.11823 7.53808" opacity="0.9" position="-85.31373 5.36434 61.10465" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000" ></a-image>
+    <a-image src="CITU3.png" scale="5.13763 8.11823 5.39856" opacity="0.6" position="-88.44615 3.66489 -24.31393" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000" ></a-image>
+    <a-image src="R2R.jpg" scale="5.13763 8.11823 5.39856" opacity="0.7" position="-33.75238 3.66489 29.60966" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000" ></a-image>
+    <a-image src="CITU8.jpg" scale="5.13763 8.11823 5.39856" opacity="0.5" position="53.49982 3.66489 -1.68901" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000"></a-image>
+    <a-image src="CITU6.jpg" scale="5.13763 8.11823 5.39856" opacity="0.8" position="90.49497 3.66489 -73.30412" material="" geometry="primitive: sphere"  animation= "property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000"></a-image>
+    <a-image src="CITY2.png" scale="5.13763 8.11823 5.39856" opacity="0.7" position="-45.77726 3.66489 -73.30412" material="" geometry="primitive: sphere" animation="property: rotation; to: 0 360 0; autoplay: true; loop: true; dur: 20000"></a-image>
+   
+    <a-image src="clickt.png" navigate-on-click="url: https://vimeo.com/559783206" samesite= lax position="23.58819 1.54617 -34.04518" opacity="0.8" material="" geometry="primitive: circle" animation="property: rotation; to: 0 360 0; loop: NaN; dur: 30000"></a-image>
+    
+    
+    <video id="VIDEOLOLO" autoplay loop="true" src="VIDEOLOLO.mp4"></video>
+
+
+    <!-- Using the asset management system. -->
+    
+    <a-video src="#VIDEOLOLO" width="16" height="9" scale="0.71979 0.75452 1" position="19.11676 3.39215 -41.12687" material="" geometry="">
+    </a-video>
+   
+    <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+
+    <a-escene>
+      <script>
+        AFRAME.registerComponent('navigate-on-click', {
+          schema: {
+            url: { default: '' }
+          },
+
+          init: function () {
+            var data = this.data;
+            var el = this.el;
+
+            el.addEventListener('click', function () {
+              window.location.href = data.url;
+            });
+          }
+        });
+      </script>
+
+
+</a-scene>
+
+</body>
+
+</html>
